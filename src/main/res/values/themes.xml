@@ -1,0 +1,45 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Counter" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    </style>
+
+    <style name="Theme.Counter" parent="Base.Theme.Counter" />
+
+    <style name="Theme.Counter.Light" parent="Base.Theme.Counter">
+        <item name="android:background">#FFFFFF</item> <!-- White background for light mode -->
+        <item name="android:statusBarColor">@color/white</item>
+        <item name="android:navigationBarColor">@color/white</item>
+        <item name="ivImageTint">@color/dark</item>
+        <item name="android:textColorPrimary">@color/dark</item> <!-- Black text color for light mode -->
+        <item name="dialogTheme">@style/DialogTheme.Light</item>
+    </style>
+
+    <style name="Theme.Counter.Dark" parent="Base.Theme.Counter">
+        <item name="android:background">@color/dark</item> <!-- Black background for dark mode -->
+        <item name="android:statusBarColor">@color/dark</item>
+        <item name="android:navigationBarColor">@color/dark</item>
+        <item name="ivImageTint">@color/white</item>
+        <item name="android:textColorPrimary">#FBFBFB</item> <!-- White text color for dark mode -->
+        <item name="dialogTheme">@style/DialogTheme.Dark</item>
+    </style>
+
+    <style name="DialogTheme.Light" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:background">#FFFFFF</item>
+        <item name="android:textColorPrimary">@color/dark</item>
+    </style>
+
+    <style name="DialogTheme.Dark" parent="Theme.AppCompat.Dialog.Alert">
+        <item name="android:background">@color/dark</item>
+        <item name="android:textColorPrimary">#FFFFFF</item>
+    </style>
+
+    <style name="Theme.Transparent" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation</item>
+    </style>
+
+    <attr name="ivImageTint" format="color" />
+</resources>
